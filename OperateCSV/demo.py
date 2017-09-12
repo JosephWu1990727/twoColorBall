@@ -6,7 +6,7 @@ data2=[2,3,4,5]
 data3=[4,5,7,8,9,0,8]
 data=[data1,data2,data3]
 
-csv_file='\\test.csv'
+csv_file='..\\test.csv'
 myCSV=class_csv.CSV_operation(csv_file)
 
 myCSV.open_for_addData()

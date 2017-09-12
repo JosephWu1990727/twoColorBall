@@ -18,7 +18,7 @@ class CSV_operation:
         self.writer = csv.writer(self.csvfile_write)
 
     def open_for_addData(self):
-        self.csvfile_write = open(self.filename, 'a+')
+        self.csvfile_write = open(self.filename, 'ab')
         self.writer = csv.writer(self.csvfile_write)
 
     def write_csv(self,data):

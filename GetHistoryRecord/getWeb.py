@@ -1,6 +1,4 @@
 # -*- coding: UTF-8 -*-
-# 此文件用户打开网页和获取网页的内容
-
 import zlib
 import urllib2
 
@@ -17,4 +15,4 @@ def GetWebConent(TargetUrl,OtherCoff,Code):
     gzipped = response.headers.get('Content-Encoding')
     if gzipped:
         html = zlib.decompress(html, 16+zlib.MAX_WBITS)
-    return html.decode(Code)
+    return html
