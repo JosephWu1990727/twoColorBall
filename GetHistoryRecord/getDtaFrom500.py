@@ -14,6 +14,7 @@ class AnalysisHtml(object):
             targetNum.append(i.get_text().encode('utf-8'))
         num2=dataTable[0].find_all("table")[0].find_all("tr")[1].find_all("td")[1].get_text()
         targetNumByOrder=num2.encode('utf-8').split()
+        print targetNum,targetNumByOrder
         return targetNum,targetNumByOrder
 
     def getAllIndexnum(self):

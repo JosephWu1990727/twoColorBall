@@ -23,7 +23,7 @@ urlList=my500_toGetUrlList.getAllIndexnum()
 # 从目标网址，分析得出详情页里面数据
 for url in urlList:
     webDetailCotent=getWeb.GetWebConent(TargetUrl=url,OtherCoff=Coff,Code='utf-8')
-    my500_toGetData=getDtaFrom500.AnalysisHtml(webCotent)
+    my500_toGetData=getDtaFrom500.AnalysisHtml(webDetailCotent)
     [lottery_num,lottery_num_byOrder]=my500_toGetData.getTargetNum()
     # 根据数据，组装成字字典
     index_num=url.split('/')[-1].split('.')[0]
